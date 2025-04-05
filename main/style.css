@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+
+:root {
+    --altura-header: 12vh;
+    --altura-section-main : 84vh;
+
+    --color-light-green : #96e072;
+    --color-honolulu-blue : #0077B6;
+    --color-royal-purple : #8747C2;
+    --color-pigment-green : #3DA35D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 4px;
+    font-family:  "Overpass Mono", monospace;
+}
+
+
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+
+body,html, #root{
+    overflow-x: hidden;
+    height: 100vh;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* INICIO DA ESTERILIZAÇÃO DO HEADER */
+#header {    
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    padding: 0em 2em;
+    background-color: var(--color-light-green);
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+}
+
+#links ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+
+#links li {
+    position: relative;
+    border: .5px solid black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.514);
+    transition: .5s ease-in-out;
+    padding: .5em;
+}
+
+#links li:hover {
+    box-shadow: 8px 6px 0px rgba(0, 0, 0);
+    background-color: var(--color-pigment-green);
+}
+/* FIM DA ESTERILIZAÇÃO DO HEADER */
+
+/* INICIO DA ESTERILIZAÇÃO DO MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    padding: 2em .5em;
+    text-align: center;
+}
+
+@media screen and (min-width : 500px) {
+
+.card {
+    overflow: hidden;
+    width: 300px;
+    height: 500px;
+    transition: all .5s ease-in;
+    border: 3px solid black;
+    border-radius: 1rem;
+}
+
+#sec_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8em 20em;
+    padding: 2em 1em; 
+    padding-bottom: 15em;
+}
+
+#sec_cards figure {
+    display: grid;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+#sec_cards figure img {
+    width: 300px;
+    height: 500px;
+}
+
+#sec_cards figure>* {
+    grid-area: 1/1;
+    transition: .4s;
+}
+
+#sec_cards figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 2rem;
+    width: 300px;
+    height: 470px;
+    padding: 15px;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    background-color: var(--color-pigment-green);
+    opacity: .5;
+    clip-path: inset(0 var(--_i, 100%) 0 0);
+    margin: -1px;
+}
+
+.lk_figcap {
+    display: none;
+}
+
+.figcap_date {
+    font-size: 1.5rem;
+}
+
+#sec_cards figure:hover figcaption {
+    --_i : 0%;
+}
+
+.card:hover  {
+    transform: scale(1.05);
+} 
+
+}
+
+/* FIM DA ESTERILIZAÇÃO DO MAIN */
+
+
+
+@media screen and (max-width : 500px) {   
+    #root {
+        overflow-x: hidden;
+    }
+
+    #header {
+        justify-content: center;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #sec_cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8em;
+        padding: 5em;
+        padding-bottom: 15em;
+    }
+
+    .card {
+        width: 300px;
+        border: 2px solid black;
+    }
+
+    .card * {
+        border-radius: 0px;
+    }
+    .card img {
+        width: 300px;
+        height: 512px;
+    }
+
+    .lk_figcap {
+        border: 1px solid black;
+        background-color: var(--color-light-green);
+        text-align: center;
+        width: 50px;
+        height: 20px;
+        padding: 10px 15px;
+        border-radius: 4px;
+    }
+    
+    .card figcaption {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px;
+    }
+
+    .card .card_title {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .figcap_date {
+        font-size: 1rem;
+    }
+    
+}

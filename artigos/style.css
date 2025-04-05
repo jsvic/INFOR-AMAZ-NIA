@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+
+
+:root {
+    --color-light-green : #96e072;
+    --color-honolulu-blue : #0077B6;
+    --color-royal-purple : #8747C2;
+    --color-pigment-green : #3DA35D;
+    --color-yinmn-blue : #3a589a;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:  "Overpass Mono", monospace;
+}
+
+
+
+a {
+color: black;
+text-decoration: none;
+}
+
+body, html, #root {
+    height: 100vh;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Começo da estilização do header */
+
+#header {    
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    padding: 0em 2em;
+    background-color: var(--color-light-green);
+}
+
+/* MUDE OS VALORES DA LOGO -> ATRAPALHANDO NO HEADER */
+#logo {
+    width: 200px;
+    height: 200px;
+}
+
+#links ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+
+#links li {
+    position: relative;
+    border: .5px solid black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.514);
+    transition: .5s ease-in-out;
+    padding: .5em;
+}
+
+#links li:hover {
+    box-shadow: 8px 6px 0px rgba(0, 0, 0);
+    background-color: var(--color-pigment-green);
+}
+
+/*Fim da estilização do header */
+
+/*Começo da estilização do body */
+
+#body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2.5em 0;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: .5em 0;
+    font-size: 1.15rem;
+    border-bottom: 2px solid black;
+}
+
+#title figure {
+    position: relative;
+}
+
+#title img {
+    width: 1200px;
+    height: 675px;
+}
+
+#title figure::before {
+    content: '';
+    display: block;
+    width: 1200px;
+    height: 675px;
+    opacity: .6;
+    background-color: black;
+    position: absolute;
+    z-index: 100;
+}
+
+#title figcaption {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    font-size: 2em;
+    color: white;
+    z-index: 200;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    text-align: justify;
+    gap: 1em;
+    font-size: 1.25rem;
+    padding: .3em 23em;
+    padding-bottom: 10em;
+    padding-top: 3em;
+}
+
+#content figure  {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column ;
+    gap: 15px;
+
+    padding: 2em 1.5em;
+}
+
+#content figure img, #content figure iframe {
+    background-size: cover;
+    background-attachment: fixed;
+    width: 800px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.sub {
+    padding: 2em .5em;
+    border-bottom: .5px solid black;
+}
+
+.fonte {
+    font-style: italic;
+    padding-bottom: 1.5em;
+}
+
+.lk_fonte {
+    color: var(--color-honolulu-blue);
+    text-decoration: underline;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: .5em;
+    
+    border: 2px solid black;
+}
+
+#asd_header {
+    background-color: var(--color-light-green);
+    padding: 15px 30px;
+    border-bottom: 1px solid black;
+}
+
+#asd_body {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+
+    padding: 25px 5em;
+    gap: 1.5em;
+}
+
+#asd_body .lista {
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5em;
+    row-gap: 15px;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: .5em;
+    
+    border: 2px solid black;
+}
+
+#qz_header {
+    color: white;
+    background-color: var(--color-honolulu-blue) ;
+    padding: 15px 30px;
+    border-bottom: 1px solid black;
+}
+
+#qz_body {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+
+    padding: 25px 5em;
+    gap: 1.5em;
+}
+
+#qz_body a {
+    color: var(--color-honolulu-blue);
+    text-decoration: underline;
+}
+/*Fim da estilização do body */
+
+
+@media screen and (max-width: 500px) {  
+    #root {
+        overflow-x: hidden;
+    }
+
+    #header {
+        justify-content: center;
+        align-self: center;
+        width: 100vw;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #title figure img {
+        width: 370px;
+        height: 400px;
+    }
+
+    #title figure figcaption {
+        top: 65%;
+        font-size: 1.15em;
+    }
+
+    #title figure::before {
+        width: 370px;
+        height: 400px;
+
+    }
+
+    #content {
+        align-items: center;
+        max-width: 390px !important;
+        flex-wrap: wrap;
+        font-size: .85rem;
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    #content p {
+        padding: 0;
+        max-width: 320px !important;
+    }
+
+    #content figure, #content figure img, #content figure iframe {
+        width: 350px !important;
+        height: 450px !important;
+    }
+
+    #qz_header {
+        padding: 8px;
+    }
+
+    #qz_body {
+        padding: 10px;
+    }
+    /*Configurar os paddings do div#kahoot*/
+}
