@@ -7,6 +7,20 @@ O Infor Amazônia é uma aplicação web em um formato de blog o qual possui div
   <li>Linguagens: Javascript, HTML&CSS</li>
 </ul>
 
+## 🤝 Colaboradores
+<table>
+  <tr>
+    <td align="center">
+      <a href="#" title="defina o título do link">
+        <img src="https://avatars.githubusercontent.com/u/69816929?v=4" width="100px;" alt="Foto do AlefGdxD no GitHub"/><br>
+        <sub>
+          <b>AlefGdxD</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## 📝 Contribuição
 Se você deseja contribuir com melhorias para o projeto, siga as etapas abaixo:
 <ol>
