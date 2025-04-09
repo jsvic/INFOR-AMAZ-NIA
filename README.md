@@ -23,9 +23,17 @@ URL: <a href='https://alefgdxd.github.io/'>https://alefgdxd.github.io/</a>
     </td>
       <td align="center">
       <a href="https://github.com/Jonatha25" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/206867208?v=4" width="100px;" alt="Foto do AlefGdxD no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/206867208?v=4" width="100px;" alt="Foto do Jonatha25 no GitHub"/><br>
         <sub>
           <b>Jonatha25</b>
+        </sub>
+      </a>
+    </td>
+      <td align="center">
+      <a href="https://github.com/knfnsc" title="defina o título do link">
+        <img src="https://avatars.githubusercontent.com/u/140078830?v=4" width="100px;" alt="Foto do knfnsc no GitHub"/><br>
+        <sub>
+          <b>knfnsc</b>
         </sub>
       </a>
     </td>
