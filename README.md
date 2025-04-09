@@ -21,6 +21,14 @@ URL: <a href='https://alefgdxd.github.io/'>https://alefgdxd.github.io/</a>
         </sub>
       </a>
     </td>
+      <td align="center">
+      <a href="https://github.com/AlefGdxD" title="defina o título do link">
+        <img src="https://avatars.githubusercontent.com/u/206867208?v=4" width="100px;" alt="Foto do AlefGdxD no GitHub"/><br>
+        <sub>
+          <b>Jonatha25</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 </table>
 
