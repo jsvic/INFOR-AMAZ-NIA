@@ -4,7 +4,7 @@ Este projeto é um blog dedicado a compartilhar informações e reflexões sobre
 ## ℹ️ Sobre o Projeto
 O Infor Amazônia é uma aplicação web em um formato de blog o qual possui diversos textos, imagens e vídeos sobre o bioma amazônico <br> <br>Foi desenvolvido com as seguintes tecnologias:
 <ul>
-  <li>Linguagens: Javascript, HTML&CSS;</li>
+  <li>Linguagens: HTML&CSS;</li>
   <li>Adicionais: Responsividade.</li>
 </ul>
 <br>
