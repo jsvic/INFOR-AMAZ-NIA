@@ -35,7 +35,7 @@ a {
 }
 
 
-/* INICIO DA ESTERILIZAÇÃO DO HEADER */
+/* INICIO DA ESTILIZAÇÃO DO HEADER */
 #header {    
     display: flex; 
     align-items: center;
@@ -68,9 +68,9 @@ a {
     box-shadow: 8px 6px 0px rgba(0, 0, 0);
     background-color: var(--color-pigment-green);
 }
-/* FIM DA ESTERILIZAÇÃO DO HEADER */
+/* FIM DA ESTILIZAÇÃO DO HEADER */
 
-/* INICIO DA ESTERILIZAÇÃO DO MAIN */
+/* INICIO DA ESTILIZAÇÃO DO MAIN */
 
 main {
     display: flex;
@@ -157,7 +157,7 @@ main {
 
 }
 
-/* FIM DA ESTERILIZAÇÃO DO MAIN */
+/* FIM DA ESTILIZAÇÃO DO MAIN */
 
 
 
